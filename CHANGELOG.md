@@ -2,7 +2,7 @@
 
 ## 3.0.0
 
-- Promoted Chatbot Intake Blueprint to v3 production certification.
+- Promoted Chatbot Intake Blueprint to release certification.
 - Added release gates, integrity hashing, import/export round-trip support, operational docs, and rigorous v3 tests.
 
 ## 1.0.0
