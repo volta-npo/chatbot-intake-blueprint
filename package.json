@@ -1,0 +1,35 @@
+{
+  "name": "@volta-oss/chatbot-intake-blueprint",
+  "version": "3.0.0",
+  "private": false,
+  "type": "module",
+  "description": "A safe blueprint for building small-business chatbots that answer FAQs without pretending to be human experts.",
+  "scripts": {
+    "test": "node --test",
+    "start": "python3 -m http.server 4173",
+    "validate": "node --test",
+    "certify": "node --test test/v3.test.js",
+    "test:all": "node --test"
+  },
+  "keywords": [
+    "ai-automation",
+    "digital-equity",
+    "local-first",
+    "oss",
+    "v3-production",
+    "volta"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/volta-npo/31-chatbot-intake-blueprint.git"
+  },
+  "homepage": "https://volta-npo.github.io/31-chatbot-intake-blueprint/",
+  "bugs": {
+    "url": "https://github.com/volta-npo/31-chatbot-intake-blueprint/issues"
+  },
+  "author": "Volta OSS Division <volta.npo@gmail.com>",
+  "engines": {
+    "node": ">=20"
+  }
+}
