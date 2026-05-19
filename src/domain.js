@@ -76,7 +76,11 @@ export const domain = {
         "Escalation triggers set",
         "Fallback message written",
         "Disclosure included",
-        "QA scenarios passed"
+        "QA scenarios passed",
+        "FAQ source matrix completed",
+        "Escalation simulator passed",
+        "Prohibited-topic harness passed",
+        "Launch risk rubric scored"
     ],
     "artifacts": [
         "Bot spec",
@@ -88,6 +92,33 @@ export const domain = {
         "Medical/legal/financial trigger escalates",
         "Disclosure required"
     ],
-    "sampleClient": "BrightPath Tutoring Studio"
+    "sampleClient": "BrightPath Tutoring Studio",
+    "modules": [
+        { "name": "FAQ source matrix", "description": "Question, approved answer, source owner, last-reviewed date, and confidence by intake topic." },
+        { "name": "Escalation simulator", "description": "Scenario-based routing tests for urgent, ambiguous, prohibited, and handoff-required messages." },
+        { "name": "Prohibited topic harness", "description": "Safety test cases, expected refusal/escalation behavior, disclosure, and audit outcome." },
+        { "name": "Launch risk rubric", "description": "Privacy, disclosure, coverage, owner review, failure modes, and human handoff readiness." }
+    ],
+    "saas": {
+        "playbooks": [
+            "FAQ source coverage review",
+            "Escalation simulation runbook",
+            "Prohibited-topic regression test",
+            "Client launch disclosure handoff"
+        ],
+        "automations": [
+            "Coverage gap scoring",
+            "Escalation path validation",
+            "Prohibited-topic test generation",
+            "Launch risk rubric export"
+        ],
+        "revenueModel": "Bot readiness workspace with paid launch QA, policy packs, and source-matrix seats",
+        "integrationTargets": [
+            "Intercom/Zendesk handoff docs",
+            "Website chatbot specs",
+            "Google Docs FAQ sources",
+            "CSV test script exports"
+        ]
+    }
 };
 //# sourceMappingURL=domain.js.map
