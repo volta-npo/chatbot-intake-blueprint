@@ -5,11 +5,12 @@
   "type": "module",
   "description": "A safe blueprint for building small-business chatbots that answer FAQs without pretending to be human experts.",
   "scripts": {
-    "test": "node --test",
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test test/*.test.js",
     "start": "python3 -m http.server 4173",
-    "validate": "node --test",
-    "certify": "node --test test/v3.test.js",
-    "test:all": "node --test"
+    "validate": "npm test",
+    "certify": "npm run build && node --test test/v3.test.js",
+    "test:all": "npm test"
   },
   "keywords": [
     "ai-automation",
@@ -22,14 +23,18 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/volta-npo/31-chatbot-intake-blueprint.git"
+    "url": "git+https://github.com/volta-npo/chatbot-intake-blueprint.git"
   },
-  "homepage": "https://volta-npo.github.io/31-chatbot-intake-blueprint/",
+  "homepage": "https://volta-npo.github.io/chatbot-intake-blueprint/",
   "bugs": {
-    "url": "https://github.com/volta-npo/31-chatbot-intake-blueprint/issues"
+    "url": "https://github.com/volta-npo/chatbot-intake-blueprint/issues"
   },
   "author": "Volta OSS Division <volta.npo@gmail.com>",
   "engines": {
     "node": ">=20"
+  },
+  "devDependencies": {
+    "typescript": "^6.0.3",
+    "@types/node": "^24.0.0"
   }
 }
